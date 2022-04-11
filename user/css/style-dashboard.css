@@ -1,0 +1,210 @@
+.page-content {
+    padding: 0 30px 0 80px;
+}
+
+.page-links{
+    padding: 15px;
+}
+
+.page-links ul {
+    padding: 0 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-links ul li a {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #ee964b;
+    outline: none!important;
+    border: 1px solid #ee964b;
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .6s ease;
+    font-weight: 700;
+    text-decoration: none!important;
+    background-color: #fff;
+}
+
+.page-links ul li a:hover{
+    background-color: #ee964b;
+    color: #fff;
+}
+
+.new-auctions{
+    padding-top: 15px;
+}
+
+.product{
+    padding: 0 0 8px;
+}
+
+.product:nth-child(1){
+    padding: 8px 0;
+}
+
+.product-wrapper{
+    padding: 0;
+}
+
+.product-image img {
+    width: 333px;
+}
+
+span.winning-amount{
+    font-weight: bold;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #ee964b;
+    border-color: #ee964b;
+}
+
+.menu-search {
+    width: 100%;
+    padding: 10px 22px;
+    border-radius: 0px;
+}
+
+.menu-search input.search-field {
+    font-weight: 300;
+    font-size: 14px;
+    width: 89%;
+    border: none;
+}
+
+.form-group input,
+.form-group  select.select2{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    line-height: 40px;
+    height: 42px;
+}
+
+.select2-container{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-size: 12px;
+    background: #fff;
+    border: none;
+    line-height: 40px;
+    height: 42px;
+}
+
+.form-group{
+    margin-bottom: 0;
+}
+
+#countdown {
+    position: unset;
+    z-index: 999;
+    padding: 0px 10px;
+    background: #fff;
+}
+
+.tagify {
+    width: 100%;
+    max-width: 700px;
+}
+
+textarea.input1 {
+    min-height: 150px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    padding: 12px 30px;
+    border: 0px;
+}
+.input1 {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+
+.add-on.remove{
+    position: absolute;
+    right: 68px;
+    top: 36px;
+}
+
+.add-on.date-th {
+    position: absolute;
+    right: 40px;
+    top: 36px;
+}
+
+.form-btn button{
+    border: 1px solid #ee964b;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ee964b;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .primnav{
+        z-index: 999;
+    }
+
+    .add-to-cart .btn-view-auction{
+        z-index: 99;
+    }
+
+    .page-content {
+        padding: 0 30px 0 20px;
+    }
+
+    .page-links {
+        padding: 15px;
+    }
+
+    .page-links ul {
+        padding: 0 50px;
+        display: block;
+    }
+
+    .page-links ul li a {
+        margin-bottom: 11px;
+        text-align: center;
+    }
+
+    .product-wrapper .card-body {
+        padding: 1.5rem;
+    }
+
+    .product-image img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .pagination {
+        display: flex !important;
+        padding-left: 76px !important;
+        padding-right: 63px !important;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+        padding: 16px 0;
+    }
+
+    .add-on.remove,
+    .add-on.date-th{
+        top: 50px;
+    }
+
+}

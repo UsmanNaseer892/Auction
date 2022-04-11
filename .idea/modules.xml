@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Auction.iml" filepath="$PROJECT_DIR$/.idea/Auction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bismillah/.idea/bismillah.iml" filepath="$PROJECT_DIR$/../bismillah/.idea/bismillah.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../price-slider-uislider/.idea/price-slider-uislider.iml" filepath="$PROJECT_DIR$/../../price-slider-uislider/.idea/price-slider-uislider.iml" />
+      <module fileurl="file://I:/Brainiac Web Work/Waqar Bhai Projects/product-gallery-carousel-with-zoom/.idea/product-gallery-carousel-with-zoom.iml" filepath="I:/Brainiac Web Work/Waqar Bhai Projects/product-gallery-carousel-with-zoom/.idea/product-gallery-carousel-with-zoom.iml" />
+      <module fileurl="file://I:/Brainiac Web Work/Waqar Bhai Projects/psd design/.idea/psd design.iml" filepath="I:/Brainiac Web Work/Waqar Bhai Projects/psd design/.idea/psd design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tagify-tags-input/.idea/tagify-tags-input.iml" filepath="$PROJECT_DIR$/../../tagify-tags-input/.idea/tagify-tags-input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tagifybasic-example/.idea/tagifybasic-example.iml" filepath="$PROJECT_DIR$/../../tagifybasic-example/.idea/tagifybasic-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../transparency/.idea/transparency.iml" filepath="$PROJECT_DIR$/../../transparency/.idea/transparency.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,1369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li, ol li {
+    color: #8b8b8a;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,0,0,0);
+}
+
+a:focus, a:visited, a:hover {
+    color: #fff;
+
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: #2695ff;
+}
+
+a, a:visited {
+    color: #ee964b;
+}
+
+p{
+    line-height: 24px;
+}
+
+h2 {
+    font-family: Montserrat;
+    line-height: 30px;
+    color: #242424;
+    font-size: 30px;
+    font-display: swap;
+}
+
+
+.main{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.header-contacts {
+    display: flex;
+    z-index: 999;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.currency-language {
+    margin: 0 -5px;
+    padding: 0;
+    list-style: none;
+}
+
+.currency-language > li {
+    padding: 0 5px;
+}
+
+.list-inline-block > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-box {
+    position: relative;
+    z-index: 10;
+}
+
+.menu-list a {
+    border-right: 1px solid #e5e5e5;
+    padding-right: 8px;
+}
+
+.top-header a {
+    color: #334141 !important;
+}
+
+
+.dropdown-list {
+    background: #fff;
+    margin-top: 30px;
+    opacity: 0;
+    padding: 10px 0;
+    z-index: 1100;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    list-style: none;
+    width: 130px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease-out 0s;
+    -webkit-transition: all 0.35s ease-out 0s;
+}
+
+.dropdown-box:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 12px;
+}
+
+.dropdown-list li a {
+    display: block;
+    padding: 5px 15px;
+    color: #666;
+}
+
+.top-header{
+    border-bottom: 1px solid rgba(221, 221, 221, 0.49);
+}
+
+
+.top-header .header-top-contact-method {
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.top-header span {
+    color: #334141;
+}
+
+.top-header a:hover {
+    opacity: .8;
+}
+
+.account-urls {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: right;
+}
+
+.account-urls > a {
+    padding: 13px 0;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.top-header i {
+    margin-right: 5px;
+}
+
+.navbar-header .mobile_only_icon_group {
+    display: none;
+    float: right;
+}
+
+.logo-image {
+    line-height: 0;
+}
+
+.navbar-header .logo {
+    margin: 30px 0px;
+}
+
+.navbar-header a.navbar-brand img {
+    max-width: 85px;
+}
+
+.search-form-product {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.menu-search {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.menu-search select.form-control1,
+select.form-control1 {
+    background: transparent;
+    outline: 0;
+    border: 0;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #606060;
+}
+
+.menu-search select#product_cat,
+ select#product_cat1 {
+    width: 30%;
+}
+
+.menu-search input.search-field {
+    border: 0;
+    outline: 0;
+    border-left: 0.5px solid #DDDDDD;
+    background: transparent;
+    line-height: 40px;
+    padding: 0;
+    padding-left: 24px;
+    height: 42px;
+    color: #606060;
+    width: 40%;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 100%;
+}
+
+.menu-search .btn.btn-search{
+    background: #484848;
+    float: right;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 30px;
+    margin-right: -1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 43px;
+    position: relative;
+    box-shadow: none;
+    outline: 0;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+}
+
+.menu-search i.fa.fa-search {
+    color: #FFF;
+}
+
+.menu-products {
+    display: grid;
+    text-align: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.menu-products .shop_cart {
+    font-weight: bold;
+    float: right;
+    font-size: 14px;
+    color: #484848;
+}
+
+a.cart-contents {
+    color: #999999 !important;
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+a.shop_cart::after{
+    color: #ee964b;
+}
+
+a.shop_cart:hover{
+    color: #ee964b;
+}
+
+a.shop_cart i {
+    padding-left: 10px;
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+    color: #ee964b;
+}
+
+.header_mini_cart h2 {
+    display: none;
+}
+
+.header_mini_cart .woocommerce-mini-cart__empty-message {
+    color: #242424;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header_mini_cart {
+    background: #FFF;
+    position: absolute;
+    padding: 25px 23px 11px;
+    opacity: 1;
+    width: 300px;
+    border-radius: 5px;
+    top: 150%;
+    right: 0;
+    transition: all 400ms ease 0s;
+    -o-transition: all 400ms ease 0s;
+    -moz-transition: all 400ms ease 0s;
+    -webkit-transition: all 400ms ease 0s;
+    -ms-transition: all 400ms ease 0s;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.menu-products:hover .header_mini_cart{
+    background: #FFF;
+    opacity: 1;
+    padding: 25px;
+    position: absolute;
+    top: 100%;
+    border-radius: 5px;
+    visibility: visible;
+    transition: all 400ms ease 0s;
+    -o-transition: all 400ms ease 0s;
+    -moz-transition: all 400ms ease 0s;
+    -webkit-transition: all 400ms ease 0s;
+    -ms-transition: all 400ms ease 0s;
+    box-shadow: 0px 5px 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-main {
+    background: #ee964b;
+}
+
+.navbar .row{
+    width: 100%;
+    margin: 0;
+}
+
+.navbar .container{
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+}
+
+.page-slider{
+    background-image: url('../images/ibid_automotive_slider.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 92px 200px;
+    transition: opacity .5s ease;
+    overflow: hidden;
+}
+
+.slider-text h1{
+    font-size: 55px;
+    text-align: left;
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.slider-text h1:nth-child(2){
+    font-weight: 700;
+}
+
+.slider-text p {
+    font-size: 22px;
+    color: #ea7f23;
+    line-height: 27px;
+    width: 73%;
+    text-align: left;
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-auction{
+    border: 2px solid;
+    border-color: rgb(72, 72, 72);
+    color: rgb(72, 72, 72);
+    background-color: transparent;
+    border-radius: 2em;
+    font-weight: 600;
+    padding: 9px 15px;
+}
+
+.btn-auction:hover{
+    background-color: #ee964b;
+    color: #fff;
+}
+
+.page-new-auction{
+    padding: 60px 92px 35px;
+ }
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.section-border {
+    width: 100%;
+    height: 23px;
+    background: url('../images/section-border.png') no-repeat center center;
+    margin: 5px 0 10px;
+}
+
+.product{
+    position: relative;
+    overflow: hidden;
+}
+
+.product-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.product-wrapper .card-body{
+    padding: 45px;
+}
+
+.products-wrapper img{
+    max-width: 100%;
+}
+
+.products-wrapper  img {
+    margin-bottom: 0px;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+}
+
+.product-wrapper img.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 68%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+}
+
+.product:hover .hover-img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 222;
+    transform: scale(1.2);
+}
+
+.add-to-cart .btn-view-auction{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 7px;
+    background-color: #ee964b;
+    border-radius: 27px;
+    z-index: 999;
+    font-size: 12px;
+    color: #fff;
+}
+
+.add-to-cart .btn-wishlist{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    padding: 5px 8px;
+    background-color: #fff;
+    border-radius: 27px;
+    z-index: 999;
+    font-size: 12px;
+    color: #ee964b;
+}
+
+.add-to-cart .btn-quickview{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    padding: 5px 8px;
+    background-color: #fff;
+    border-radius: 27px;
+    z-index: 999;
+    font-size: 12px;
+    color: #ee964b;
+}
+
+.add-to-cart .btn-quickview:hover,
+.add-to-cart .btn-wishlist:hover{
+    background-color: #ee964b;
+    color: #fff;
+}
+
+.products .component i {
+    color: #fff;
+}
+
+.component.add-to-cart i.fa {
+    font-size: 11px;
+}
+
+.sport-car{
+    background-image: url("../images/vintage_car.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 38px 40px 136px;
+    max-width: 49%;
+    margin-right: 1%;
+}
+
+.vintage-car{
+    background-image: url("../images/sport_car.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 49%;
+    padding: 38px 40px 136px;
+}
+
+.sport-car h3,
+.vintage-car h3
+{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.sport-car p,
+.vintage-car p{
+    color: #FFFFFF;
+    font-weight: normal;
+    line-height: 26px;
+    margin-top: 5px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.btn-more{
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    line-height: 1;
+    margin-top: 25px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    position: relative;
+    z-index: 12;
+}
+
+.sport-car a:before,
+.vintage-car a:before,
+.sport-car a:after,
+.vintage-car a:after{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.sport-car a:before,
+.vintage-car a:before,
+.sport-car a:after,
+.vintage-car a:after
+{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.sport-car:hover a:before,
+.vintage-car:hover a:before,
+.sport-car:hover a:after,
+.vintage-car:hover a:after
+{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.item-auction1{
+    background-image: url("../images/sport_car.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 9% 15px 10%;
+    text-align: center;
+}
+
+.page-car-model{
+    padding: 50px 0;
+}
+
+.cat-name{
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.cat-counts{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.item-auction1 .btn-more{
+    margin: 14px auto 0;
+    float: unset;
+}
+
+.auction-product{
+    margin-bottom: 10px;
+}
+
+.auction-product a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+}
+
+.auction-product a img {
+    margin-bottom: 0px;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+}
+
+.auction-product a img{
+    max-width: 165px;
+}
+
+.item-auction2{
+    padding-left: 25px;
+}
+
+.product-wrap{
+    padding: 10px 15px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-detail {
+    width: 60%;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.product-detail h3{
+    align-self: center;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    width: 100%;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+}
+
+.product-detail h3 a{
+    color: #484848;
+}
+
+.product-detail p{
+    color: #606060;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.product-detail p span{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #242424;
+}
+
+.auction-product a.product-detail{
+    max-width: 165px;
+    overflow: hidden;
+}
+
+
+.auction-product a.product-img img:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.auction-product .btn-wishlist,
+.auction-product .btn-quickview,
+.auction-product .btn-view-auction{
+    position: unset;
+    margin-right: 8px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+.auction-cat2{
+    background-image: url("../images/vintage_car.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 9% 15px 10%;
+    text-align: center;
+}
+
+.page-contact{
+    padding: 40px 0 ;
+}
+
+.contact-map{
+    padding: 60px 0 0 90px;
+}
+
+.contact-map img{
+    max-width: 100%;
+}
+
+.contact-form{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.contact-form  label {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+}
+
+.ibid-contact label span, div.wpcf7-response-output {
+    font-weight: 500;
+    color: #252525 !important;
+    margin: 15px 0;
+}
+
+.ibid-contact input, .ibid-contact textarea {
+    height: 60px;
+    width: 100%;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    border-top: 2px solid transparent;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.49) !important;
+    color: #606060;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+}
+
+.wpcf7-form input:focus{
+    border-color: #ee964b;
+}
+
+.ibid-contact textarea {
+    min-height: 150px !important;
+    padding-top: 20px !important;
+}
+
+.wpcf7-form .wpcf7-submit {
+    border: 0 none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #ee964b;
+    color: #fff;
+    width: 100%;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.owl-carousel{
+    padding: 40px 0;
+}
+
+.owl-carousel .item img{
+    max-width: 150px;
+}
+
+.page-library{
+    padding: 20px;
+    background-color: #ee964b;
+}
+
+.page-library .left {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.menu-search {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-size: 12px;
+    background: #fff;
+    border: none;
+}
+
+.menu-search input.search-field {
+    border: 0;
+    outline: 0;
+    border-left: 0.5px solid #DDDDDD;
+    background: transparent;
+    line-height: 40px;
+    padding: 0;
+    padding-left: 24px;
+    height: 42px;
+    color: #606060;
+    width: 40%;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 100%;
+}
+
+.menu-search input.search-field {
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+}
+
+.btn-search .fa-search{
+    color: #fff;
+}
+
+.main-footer {
+    padding-bottom: 60px;
+    padding-top: 70px;
+}
+
+footer .logo {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+footer .logo img{
+    max-width: 105px;
+}
+
+.sidebar-social-networks {
+    margin-left: -10px;
+}
+
+.footer-widgets ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-social-networks  li {
+    display: inline-table;
+    margin-bottom: 3px;
+    text-align: center;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.sidebar-social-networks li a {
+    background-color: #ffffff;
+    color: #ee964b !important;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0;
+    text-align: center;
+}
+
+ul.menu li {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding-left: 16px;
+    position: relative;
+}
+
+ul.menu li i{
+    color: #8c8c8c;
+    margin-right: 6px;
+    background: transparent !important;
+    opacity: .7;
+}
+
+.menu .menu-item a {
+    color: #afafaf;
+    display: block;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    transition: all 300ms ease;
+}
+
+.menu .menu-item a:hover {
+    color: #ee964b;
+}
+
+.footer-widgets h1{
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 24px;
+    margin-bottom: 19px;
+    color: #343E47;
+}
+
+.newsletter-footer {
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.newsletter-footer .email {
+    border: 0;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+    outline: 0;
+    width: 80%;
+    background: transparent;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: #606060;
+}
+
+.newsletter-footer input.submit {
+    background: #484848;
+    box-shadow: none;
+    border: 0;
+    color: #FFF;
+    padding: 14px 25px;
+    line-height: 1;
+    width: 30%;
+    font-size: 12px;
+    margin-left: -15%;
+    border-radius: 30px;
+    outline: 0;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#countdown,
+#countdown1{
+    position: absolute;
+    left: 34px;
+    z-index: 999;
+    padding: 0px 10px;
+    bottom: 118px;
+    background: #fff;
+}
+
+#countdown ul,
+#countdown1 ul{
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#countdown li,
+#countdown1 li {
+    display: inline-block;
+    font-size: 10px;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#countdown li span,
+#countdown1 li span {
+    display: block;
+    font-size: 14px;
+}
+
+.modal-content {
+    border-radius: 11px;
+}
+
+.modal-header{
+    background: #484848;
+    border-radius: 11px 11px 0px 0px;
+    margin: 0;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.modal-body{
+    padding: 10px 15px 20px!important;
+}
+
+.modal-content p i {
+    position: absolute;
+    margin-top: 30px;
+    left: 35px;
+    z-index: 999;
+    color: #ee964b;
+    font-size: 18px;
+}
+
+#loginform input[type="text"], #loginform input[type="password"] {
+    height: 55px;
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+    padding: 0 25px 0 55px !important;
+    border: 0 !important;
+    border-radius: 30px;
+    transition: all 250ms ease;
+    background: #F7F8FA !important;
+}
+
+.modal-content p.login-submit {
+    float: left;
+    margin-right: 10px !important;
+}
+
+#loginform input[type="submit"], form#login .register_button, form#login .submit_button, a#register-modal, a#register {
+    border: 0 none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 30px;
+    height: 45px;
+    outline: 0;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    width: auto;
+    border-radius: 25px;
+    background-color: #ee964b;
+    box-shadow: 20px 37px 102px rgba(0, 0, 0, 0.098);
+}
+
+p.btn-register-p {
+    float: left;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    margin-right: 20px !important;
+}
+
+a#register-modal, a#register {
+    border-radius: 30px;
+    padding: 13px 25px;
+}
+
+p.woocommerce-LostPassword.lost_password {
+    float: left;
+    margin-top: 9px;
+    margin-right: 20px !important;
+    color: #ee964b;
+}
+
+#loginform label {
+    display: none !important;
+}
+
+.page-password-setting{
+    padding: 40px 0 0px;
+}
+
+.page-password-setting h1 {
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.form-row-first{
+    width: 47%;
+}
+
+.account-settings{
+    margin-top: 50px !important;
+    margin-bottom: 85px !important;
+}
+
+.account-settings p {
+    font-family: Montserrat;
+    line-height: 24px;
+    font-weight: 300;
+    color: #606060;
+    font-size: 16px;
+}
+
+.account-settings input.input-text{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    line-height: normal;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.btn-reset{
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    left: auto;
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #FFF;
+    font-weight: 600;
+    background: #ee964b;
+    border-color: #ee964b;
+    border: 0 none;
+    font-size: 14px;
+    border-radius: 30px !important;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out 0s;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    padding: 12px 25px !important;
+}
+
+label.radio {
+    color: #ee964b;
+    text-align: left;
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.btn-login{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+ input[type="radio"] {
+    left: 0;
+    margin-right: 6px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width:767px){
+    .currency-language,
+    .top-header span,
+    .account-urls,
+    .main-header .first-part{
+        display: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        color: rgba(0,0,0,.9);
+    }
+
+    ul.navbar-nav li{
+        padding: 10px;
+        border-top: 1px solid rgb(88, 87, 87, 0.49);
+    }
+
+    .navbar-toggler {
+        float: right;
+        border: 0px;
+        margin-top: 7px;
+        color: #ee964b !important;
+    }
+
+    .navbar-header .mobile_only_icon_group {
+        display: block;
+        float: right;
+        padding: 10px 7px;
+        color: #ebebeb;
+    }
+
+    .navbar-header .mobile_only_icon_group a{
+        color: rgba(0,0,0,.5);
+    }
+
+    .navbar-main {
+        background: transparent;
+    }
+
+    .page-slider{
+        padding: 24px 15px 200px;
+        background-position: left;
+    }
+
+    .slider-text h1 {
+        font-size: 38px !important;
+        line-height: 56px !important;
+    }
+
+    .page-new-auction {
+        padding: 60px 20px 35px 15px;
+    }
+
+    .product{
+        padding: 0 0 0 5px;
+    }
+
+    .product-image img{
+        height: 178px;
+    }
+
+    .product-wrapper .card-body {
+        padding: .5rem;
+    }
+
+    .product-wrapper .card-body h5 {
+        font-size: 18px;
+    }
+
+    .page-car-model {
+        padding: 50px 5px;
+    }
+
+    .sport-car,
+    .vintage-car{
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .page-product-auctions{
+        padding: 0 5px;
+    }
+
+    .item-auction2 {
+        padding: 5px;
+    }
+
+    .product-wrap {
+        padding: 5px;
+        display: block;
+    }
+
+    .product-detail {
+        padding: 5px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .product-detail h3{
+        font-size: 14px;
+    }
+
+    .product-detail p,
+    .product-detail p span{
+        font-size: 12px;
+    }
+
+    .page-contact {
+        padding: 40px 10px;
+    }
+
+    .auction-product .overlay-component{
+        justify-content: center;
+    }
+
+    .page-library .left{
+        display: none;
+    }
+
+    .form-row-first{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}

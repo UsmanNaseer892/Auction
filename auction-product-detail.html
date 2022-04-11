@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- FontAwesome CDN-->
+    <link type='text/css' rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!-- Animate.css CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- zoom Slider JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://k1ngzed.com/dist/swiper/swiper.min.css'>
+    <link rel='stylesheet' href='https://k1ngzed.com/dist/EasyZoom/easyzoom.css'>
+    <!-- Custom Style-->
+    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/style-auction.css">
+    <link rel="stylesheet" href="./css/style-auction-product-detail.css">
+
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <form name="loginform" id="loginform" action="https://ibid.modeltheme.com/automotive/wp-login.php" method="post" novalidate="novalidate">
+                        <p class="login-username">
+                            <label for="user_login">Username or Email Address</label>
+                            <i class="far fa-user" aria-hidden="true"></i>
+                            <input type="text" name="log" id="user_login" class="input" value="" required="" size="20" placeholder="Username">
+                        </p>
+                        <p class="login-password">
+                            <label for="user_pass">Password</label>
+                            <i class="fas fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="password" name="pwd" id="user_pass" class="input" value="" required="" size="20" placeholder="Password">
+                        </p>
+
+                        <p class="login-remember">
+                            <label>
+                                <input name="rememberme" type="checkbox" id="rememberme" value="forever">
+                                Remember Me                                </label>
+                        </p>
+                        <div class="row-buttons">
+                            <p class="login-submit">
+                                <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Log In">
+                                <input type="hidden" name="redirect_to" value="https://ibid.modeltheme.com/automotive">
+                            </p>
+                            <p class="btn-register-p">
+                                <a class="btn btn-register" id="register-modal">Register</a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <p class="woocommerce-LostPassword lost_password">
+                                <a href="https://ibid.modeltheme.com/automotive/my-account/lost-password/">Lost your password?</a>
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid main">
+
+    <div class="row">
+
+        <header class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 top-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-x12 header-contacts">
+
+                        <ul class="currency-language list-inline-block menu-list">
+                            <li>
+                                <div class="language-box dropdown-box">
+                                    <a class="language-current" href="#">EN
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                    <ul class="language-list list-none dropdown-list">
+                                        <li><a href="#">EN</a></li>
+                                        <li><a href="#">FR</a></li>
+                                        <li><a href="#">GE</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="currency-box dropdown-box">
+                                    <a class="currency-current" href="#">USD
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                    <ul class="currency-list list-none dropdown-list">
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                        <li><a href="#">JPY</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="header-top-contact-method">
+                            <span>Call us toll free: </span>
+                            <a href="#">
+                                +1-541-754-3010
+                            </a>
+                        </div>
+
+                        <div class="header-top-contact-method">
+                            <span>Send us an email: </span>
+                            <a href="#">
+                                contact@example.com
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 account-urls">
+                        <a class="top-order" href="https://ibid.modeltheme.com/automotive/order-tracking/">
+                            <i class="fas fa-truck"></i>
+                            Order Tracking
+                        </a>
+                        <a class="top-payment" href="https://ibid.modeltheme.com/automotive/wishlist/">
+                            <i class="far fa-heart"></i>
+                            Wishlist
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <header class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 main-header">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="navbar-header col-md-3 col-sm-12">
+
+                                <a class="navbar-brand" href="https://ibid.modeltheme.com/automotive">
+                                    <img src="https://ibid.modeltheme.com/automotive/wp-content/uploads/2019/10/logo-ibid-automotive.png" alt="iBid">
+                                </a>
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+
+                                <div class="mobile_only_icon_group search">
+                                    <a href="#" class="mt-search-icon">
+                                        <i class="fas fa-search" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile_only_icon_group cart">
+                                    <a href="https://ibid.modeltheme.com/automotive/cart/">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile_only_icon_group wishlist">
+                                    <a class="top-payment" href="https://ibid.modeltheme.com/automotive/wishlist/">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="first-part col-xl-9 col-md-9 col-md-9 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-md-8 search-form-product">
+                                        <div class="ibid-header-searchform">
+                                            <form name="header-search-form" method="GET" class="woocommerce-product-search menu-search" action="https://ibid.modeltheme.com/automotive/">
+                                                <select name="product_cat" id="product_cat" class="form-control1">
+                                                    <option value="">Category</option>
+                                                    <option class="level-0" value="tesla">Tesla</option>
+                                                    <option class="level-0" value="bmw">BMW</option>
+                                                    <option class="level-0" value="audi">Audi</option>
+                                                    <option class="level-0" value="mobile-phones">Mobile Phones</option>
+                                                    <option class="level-0" value="protection-phones">Cases &amp; Protection</option>
+                                                    <option class="level-0" value="power-bank">Power Banks</option>
+                                                    <option class="level-0" value="mobile-phone-chargers">Mobile Chargers</option>
+                                                    <option class="level-0" value="data-cables-phones">Data Cables</option>
+                                                    <option class="level-0" value="selfie-stickers">Selfie Sticks</option>
+                                                    <option class="level-0" value="tablets">Tablets</option>
+                                                    <option class="level-0" value="protection-tablets">Tablets Protection</option>
+                                                    <option class="level-0" value="console-gaming">Console Gaming</option>
+                                                    <option class="level-0" value="televisions">Televisions</option>
+                                                    <option class="level-0" value="accessories">Accessories</option>
+                                                </select>
+                                                <input type="hidden" value="product" name="post_type">
+                                                <input type="text" name="s" class="search-field" id="keyword" onkeyup="fetch()" maxlength="128" value="" placeholder="Search products...">
+                                                <button type="submit" class="btn btn-search">
+                                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                                </button>
+                                                <input type="hidden" name="post_type" value="product">
+                                            </form>
+                                            <div id="datafetch"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 menu-products">
+                                        <a class="shop_cart" href="https://ibid.modeltheme.com/automotive/cart/">
+                                            My Cart
+                                            <i class="fas fa-shopping-basket"></i>
+                                        </a>
+                                        <a class="cart-contents" href="https://ibid.modeltheme.com/automotive/cart/" title="View your shopping cart">0 items - <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0.00</bdi></span></a>
+
+                                        <!-- Shop Minicart -->
+                                        <div class="header_mini_cart">
+                                            <div class="widget woocommerce widget_shopping_cart">
+                                                <h2 class="widgettitle">Cart</h2>
+                                                <div class="widget_shopping_cart_content">
+                                                    <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light navbar-main">
+
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item category dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarCat" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bars"></i>
+                                    CATEGORIES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarCat">
+                                    <a class="dropdown-item" href="#">Laptop, Tablet, Phones</a>
+                                    <a class="dropdown-item" href="#">PC, Peripherals & Software</a>
+                                    <a class="dropdown-item" href="#">TV Audio-Video & Photo</a>
+                                    <a class="dropdown-item" href="#">Home Appliance & AC</a>
+                                    <a class="dropdown-item" href="#">Game & Consoles</a>
+                                    <a class="dropdown-item" href="#">Personal Care & Cosmetics</a>
+                                    <a class="dropdown-item" href="#">Books Offices & Gifts</a>
+                                    <a class="dropdown-item" href="#">Order Tracking</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Auction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-login my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+                    </div>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 page-content">
+
+            <section class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 page-auction-detail">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                            <div class="product__carousel">
+
+                                <!-- Swiper and EasyZoom plugins start -->
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide easyzoom easyzoom--overlay">
+                                            <a href="https://k1ngzed.com/dist/images/nature-1.jpg">
+                                                <img src="https://k1ngzed.com/dist/images/nature-1.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="ibid-auction-no-reserve">No reserve</div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next swiper-button-white"></div>
+                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                </div>
+                                <div class="swiper-container gallery-thumbs" style="display:none;height: 700px !important;">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="width: 170px !important; ">
+                                            <img src="https://k1ngzed.com/dist/images/nature-1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide" style="width: 170px !important; ">
+                                            <img src="https://k1ngzed.com/dist/images/nature-2.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide" style="width: 170px !important; ">
+                                            <img src="https://k1ngzed.com/dist/images/nature-3.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide" style="width: 170px !important; ">
+                                            <img src="https://k1ngzed.com/dist/images/nature-4.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide" style="width: 170px !important; ">
+                                            <img src="https://k1ngzed.com/dist/images/nature-5.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Swiper and EasyZoom plugins end -->
+                            </div>
+                            <!-- partial -->
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 summary">
+                            <div class="product-description" itemprop="description">
+                                <p>The Ragdoll is a cat breed with blue eyes and a distinct colorpoint coat. It is a large and muscular semi-longhair cat with a soft and silky coat. Like all long haired cats, Ragdolls need grooming to ensure their fur does not mat.</p>
+                            </div>
+
+                            <p class="price">
+                                <span class="auction-price starting-bid" data-auction-id="4472" data-bid="" data-status="running">
+                                    <span class="current auction">Starting bid:</span>
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi>
+                                            <span class="woocommerce-Price-currencySymbol">$</span>
+                                            1,500.00
+                                        </bdi>
+                                    </span>
+                                </span>
+                            </p>
+
+                            <p class="auction-condition">Item condition:<span class="curent-bid"> New</span></p>
+
+                            <div class="auction-time" >Time left:
+                                <div id="countdown">
+                                    <ul>
+                                        <li><span id="months"></span>Month</li>
+                                        <li><span id="weeks"></span>Week</li>
+                                        <li><span id="days"></span>days</li>
+                                        <li><span id="hours"></span>Hours</li>
+                                        <li><span id="minutes"></span>Minutes</li>
+                                        <li><span id="seconds"></span>Seconds</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="auction-ajax-change">
+
+                                <p class="auction-end">Auction ends: December 30, 2020  12:00 am <br>
+                                    Timezone: UTC 0		</p>
+
+                                <p class="auction-bid"> </p>
+
+                                <form class="auction_form cart" method="post" enctype="multipart/form-data" data-product_id="4472">
+
+
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                            <input type="number" value="500" min="0" max="1000" step="1"/>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 auction-btn">
+                                            <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                                <i class="fas fa-gavel"></i>
+                                            </a>
+                                            <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                            <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+
+                                <p class="wsawl-link">
+                                    <a href=" #add_to_watchlist data-tooltip=" add="" watchlist="" data-auction-id="4472" class="add-wsawl sa-watchlist-action  no-action  " title="You must be logged in to use watchlist feature"></a>
+
+                                </p>
+
+                            </div>
+
+                            <div class="product_meta">
+
+                                <span class="sku_wrapper">SKU: <span class="sku">BF001</span></span>
+                                <span class="posted_in">Categories:
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/" rel="tag">Audi</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/protection-phones/" rel="tag">Cases &amp; Protection</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/console-gaming/" rel="tag">Console Gaming</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/data-cables-phones/" rel="tag">Data Cables</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/mobile-phone-chargers/" rel="tag">Mobile Chargers</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/mobile-phones/" rel="tag">Mobile Phones</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/power-bank/" rel="tag">Power Banks</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/selfie-stickers/" rel="tag">Selfie Sticks</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/tablets/" rel="tag">Tablets</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-category/audi/protection-tablets/" rel="tag">Tablets Protection</a>
+                                </span>
+                                <span class="tagged_as">Tags:
+                                    <a href="https://ibid.modeltheme.com/automotive/product-tag/black-friday/" rel="tag">black friday</a>,
+                                    <a href="https://ibid.modeltheme.com/automotive/product-tag/sales/" rel="tag">sales</a>
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 page-product-tab">
+                <div class="container">
+                    <ul class="nav nav-pills product-tabs mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-info-tab" data-toggle="pill" href="#pills-info" role="tab" aria-controls="pills-info" aria-selected="false">Additional Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-auct-history-tab" data-toggle="pill" href="#pills-auct-history" role="tab" aria-controls="pills-auct-history" aria-selected="false">Auction History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-vendor-tab" data-toggle="pill" href="#pills-vendor" role="tab" aria-controls="pills-vendor" aria-selected="false">VendorInfo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-more-vendor-tab" data-toggle="pill" href="#pills-more-vendor" role="tab" aria-controls="pills-more-vendor" aria-selected="false">More from Vendor</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                            <p>The Ragdoll is a cat breed with blue eyes and a distinct colorpoint coat. It is a large and muscular semi-longhair cat with a soft and silky coat. Like all long haired cats, Ragdolls need grooming to ensure their fur does not mat. Developed by American breeder Ann Baker in the 1960s, it is best known for its docile and placid temperament and affectionate nature.</p>
+                            <p>The name “Ragdoll” is derived from the tendency of individuals from the original breeding stock to go limp and relaxed when picked up. Particularly popular in both the United Kingdom and the breed’s native United States, ragdoll cats often are known as “dog-like cats” or “puppy-like cats” due to behaviors such as their tendency to follow people around, their ease at being physically handled, and their relative lack of aggression toward other pets.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                            <table class="table table-striped table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Color</th>
+                                        <td>Red</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Year</th>
+                                        <td>1970</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Make</th>
+                                        <td>Toyota</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Model</th>
+                                        <td>Yaris</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Location</th>
+                                        <td>INDIANAPOLIS</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Odometer</th>
+                                        <td>91,212</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Condition</th>
+                                        <td>Used</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="pills-auct-history" role="tabpanel" aria-labelledby="pills-auct-history-tab">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Bid</th>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Auto</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>May 26, 2020 4:22 pm</td>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                    $
+                                                </span>
+                                                200.00
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                    <td>Auctioner</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="pills-vendor" role="tabpanel" aria-labelledby="pills-vendor-tab">
+                            <ul class="list-unstyled">
+
+                                <li class="store-name">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Store Name:</span>
+                                    <span class="details">
+                                        modeltheme
+                                    </span>
+                                </li>
+
+                                <li class="seller-name">
+                                    <i class="fas fa-user"></i>
+                                    <span>
+                                        Vendor:
+                                    </span>
+
+                                    <span class="details">
+                                        <a href="#">James Colins</a>
+                                    </span>
+                                </li>
+                                <li class="store-address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span><b>Address:</b></span>
+                                    <span class="details">
+                                        Manchester
+                                    </span>
+                                </li>
+
+                                <li class="clearfix">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="seller-rating">
+                                        <span title=" Rated 5.00 out of 5" class="star-rating">
+                                            <span class="width" style="width: 100%"></span>
+                                            <span>
+                                                <strong></strong>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="text">5.00 rating from 1 review</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="pills-more-vendor" role="tabpanel" aria-labelledby="pills-more-vendor-tab">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                                    <a href="#">
+                                        <div class="card product-wrapper" >
+                                            <div class="product-image">
+                                                <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                                <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                            </div>
+
+                                            <div class="overlay-component add-to-cart">
+                                                <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                                    <i class="far fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">
+                                                    <a href="#">Orange Fait 500</a>
+                                                </h5>
+                                                <p class="card-text">Auction Ended</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                                    <a href="#">
+                                        <div class="card product-wrapper" >
+                                            <div class="product-image">
+                                                <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                                <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                            </div>
+
+                                            <div class="overlay-component add-to-cart">
+                                                <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                                    <i class="far fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">
+                                                    <a href="#">Orange Fait 500</a>
+                                                </h5>
+                                                <p class="card-text">Auction Ended</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                                    <a href="#">
+                                        <div class="card product-wrapper" >
+                                            <div class="product-image">
+                                                <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                                <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                            </div>
+
+                                            <div class="overlay-component add-to-cart">
+                                                <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                                    <i class="far fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">
+                                                    <a href="#">Orange Fait 500</a>
+                                                </h5>
+                                                <p class="card-text">Auction Ended</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                                    <a href="#">
+                                        <div class="card product-wrapper" >
+                                            <div class="product-image">
+                                                <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                                <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                            </div>
+
+                                            <div class="overlay-component add-to-cart">
+                                                <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                                    <i class="far fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                                    <i class="far fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">
+                                                    <a href="#">Orange Fait 500</a>
+                                                </h5>
+                                                <p class="card-text">Auction Ended</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 page-related-product ">
+                <div class="container">
+                    <h2 class="section-title text-left mb-4">Related Products</h2>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                            <a href="#">
+                                <div class="card product-wrapper" >
+                                    <div class="product-image">
+                                        <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                        <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                    </div>
+
+                                    <div class="overlay-component add-to-cart">
+                                        <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            <a href="#">Orange Fait 500</a>
+                                        </h5>
+                                        <p class="card-text">Auction Ended</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                            <a href="#">
+                                <div class="card product-wrapper" >
+                                    <div class="product-image">
+                                        <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                        <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                    </div>
+
+                                    <div class="overlay-component add-to-cart">
+                                        <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            <a href="#">Orange Fait 500</a>
+                                        </h5>
+                                        <p class="card-text">Auction Ended</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                            <a href="#">
+                                <div class="card product-wrapper" >
+                                    <div class="product-image">
+                                        <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                        <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                    </div>
+
+                                    <div class="overlay-component add-to-cart">
+                                        <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            <a href="#">Orange Fait 500</a>
+                                        </h5>
+                                        <p class="card-text">Auction Ended</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product">
+                            <a href="#">
+                                <div class="card product-wrapper" >
+                                    <div class="product-image">
+                                        <img src="images/car_img_1.jpg" class="card-img-top main-img" width="300" height="300">
+                                        <img src="images/car_img_2.jpg" class="hover-img" width="350" height="300">
+                                    </div>
+
+                                    <div class="overlay-component add-to-cart">
+                                        <a href="#" class="btn-view-auction" data-toggle="tooltip" data-placement="right" title="View Auctions">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn-wishlist" data-toggle="tooltip" data-placement="right" title="Add to wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                        <a href="#" class="btn-quickview" data-toggle="tooltip" data-placement="right" title="QuickView">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">
+                                            <a href="#">Orange Fait 500</a>
+                                        </h5>
+                                        <p class="card-text">Auction Ended</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 page-library">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 left">Browse through our products library!</div>
+                        <div class="col-md-4">
+                            <form name="myform" method="GET" class="woocommerce-product-search menu-search" action="https://ibid.modeltheme.com/automotive/">
+                                <input type="hidden" value="product" name="post_type">
+                                <input type="text" name="s" class="search-field" maxlength="128" value="" placeholder="Search products...">
+                                <button type="submit" class="btn btn-search"><i class="fas fa-search" aria-hidden="true"></i></button>
+                                <input type="hidden" name="post_type" value="product">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-widgets">
+                        <h1 class="logo">
+                            <a href="#">
+                                <img src="images/logo-ibid-automotive.png">
+                            </a>
+                        </h1>
+                        <p>
+                            <span style="color: #606060;">contact@example.com</span>
+                            <br>
+                            <span style="color: #606060;">+1-541-754-3010</span>
+                        </p>
+
+                        <div class="sidebar-social-networks">
+                            <ul>
+                                <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/google"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="http://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-widgets">
+                        <h1>Useful Links</h1>
+                        <div class="menu-links-container">
+                            <ul id="menu-links" class="menu">
+                                <li id="menu-item-4560" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4560">
+                                    <a href="#">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Mobile Phone</a>
+                                </li>
+                                <li id="menu-item-4561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4561">
+                                    <a href="#">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Laptop</a>
+                                </li>
+                                <li id="menu-item-4562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4562">
+                                    <a href="#">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Headphones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-widgets">
+                        <h1>Our Policy</h1>
+                        <div class="menu-links-container">
+                            <ul id="menu-link" class="menu">
+                                <li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4560">
+                                    <a href="#">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Homepage</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4561">
+                                    <a href="#">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Blog</a>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4562">
+                                    <a href="#">
+                                        <i class="fas fa-angle-double-right"></i>
+                                        Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 footer-widgets">
+                        <h1>Subscribe to our Newsletters</h1>
+                        <form class="" method="post" data-id="4260" data-name="Newsletter">
+                            <div class="form-fields">
+                                <div class="newsletter-footer">
+                                    <input class="email" type="email" name="EMAIL" placeholder="Enter your email" required="">
+                                    <input class="submit" type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://k1ngzed.com/dist/swiper/swiper.min.js'></script>
+<script src='https://k1ngzed.com/dist/EasyZoom/easyzoom.js'></script>
+
+
+
+<script>
+    // product Gallery and Zoom
+
+    // activation carousel plugin
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 5,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+        }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        },
+    });
+    // change carousel item height
+    // gallery-top
+    let productCarouselTopWidth = $('.gallery-top').outerWidth();
+    $('.gallery-top').css('height', productCarouselTopWidth);
+
+    // gallery-thumbs
+    let productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
+    $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
+
+    // activation zoom plugin
+    var $easyzoom = $('.easyzoom').easyZoom();
+</script>
+
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+            week = day * 7;
+            month = day * 30;
+
+        let auction = "Dec 23, 2020 08:00:00",
+            countDown = new Date(auction).getTime(),
+            x = setInterval(function() {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                    let headline = document.getElementById("headline"),
+                        countdown = document.getElementById("countdown"),
+                        content = document.getElementById("content");
+
+                    headline.innerText = "Aunction Ended";
+                    countdown.style.display = "none";
+                    content.style.display = "block";
+
+                    clearInterval(x);
+                }
+                //seconds
+            }, 0)
+    }());
+
+    </script>
+<script src="./js/bootstrap-input-spinner.js"></script>
+<script>
+    $("input[type='number']").inputSpinner();
+</script>
+
+</body>
+
+</html>
